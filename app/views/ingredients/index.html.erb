@@ -1,4 +1,4 @@
 <h1>Ingredients#index</h1>
 <%@ingredients.each do |ingredient|%>
-<li><%= link_to ingredient.content, ingredient_path(ingredient)%></li>
+<li><%= link_to ingredient.content, ingredient_path(ingredient)%> | # Users with an allergy: <%= ingredient.allergies.count %></li>
 <%end%>

@@ -6,7 +6,7 @@ class RecipesController < ApplicationController
   end
 
   def search
-    byebug
+    puts "test"
     @ing_count = Recipe.all.map do |recipe|
       recipe.ingredients.count
       end
